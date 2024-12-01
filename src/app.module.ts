@@ -16,7 +16,7 @@ import { FilesModule } from './files/files.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.development.env', '.production.env'],
+      envFilePath: ['.env.development', '.env.production'],
       isGlobal: true,
       load: [configuration],
     }),
