@@ -8,7 +8,7 @@ async function bootstrap() {
 
   app.use(cookieParser());
   app.enableCors({
-    origin: '*.candylau.fr',
+    origin: 'https://app.candylau.fr',
   });
 
   await app.listen(process.env.PORT ?? 3000);
