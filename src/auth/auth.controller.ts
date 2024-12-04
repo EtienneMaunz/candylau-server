@@ -29,7 +29,7 @@ export class AuthController {
 
     response.cookie('authToken', authToken, {
       secure: true,
-      sameSite: 'strict',
+      sameSite: 'none',
       httpOnly: true,
     });
 
